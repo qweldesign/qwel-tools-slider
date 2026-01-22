@@ -1,8 +1,8 @@
 # QWEL CREATIVE TEMPLATE
 
-[QWEL.DESIGN](https://qwel.design/) の作品集 Creative Crafts のためのテンプレート
+[QWEL.DESIGN](https://qwel.design/) の作品集 Creative Tools のためのテンプレート
 
-[https://qwel.design/creative/](https://qwel.design/creative/)
+[https://tools.qwel.design/](https://tools.qwel.design/)
 
 ---
 

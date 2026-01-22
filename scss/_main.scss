@@ -3,10 +3,11 @@
  */
 
 .main {
-  width: min(100%, 768px);
-  min-height: calc(100vh - 18rem);
-  margin: 0 auto;
-  padding: 0 clamp(0.75rem, 2%, 1.5rem);
+  &__inner {
+    width: min(100%, 900px);
+    margin: 0 auto;
+    padding: space("medium") clamp(0.75rem, 2%, 1.125rem);
+  }
 
   &__title {
     &::after {
@@ -21,6 +22,16 @@
     }
   }
 
+  &__heading {
+    &::before {
+      content: "✶";
+      margin-inline: space("x-small");
+      color: var(--color--primary--active);
+      font-size: 1.5em;
+      vertical-align: -0.125em;
+    }
+  }
+
   &__list {
     list-style-type: none;
     margin: space("medium") 0;
@@ -28,25 +39,25 @@
   }
 
   &__listItem {
-    &::before {
-      content: '✶';
-      padding-inline-end: 0.5em;
-      color: color-active("primary");
-      font-size: 1.5em;
-    }
+    position: relative;
+    padding-inline-start: space("large");
+    padding-inline-end: space("medium");
+    color: theme-color("dark");
+    font-size: 0.875rem;
+    text-align: justify;
+    letter-spacing: var(--heading-letter-spacing);
 
-    &--spec {
-      color: theme-color("dark");
-      font-size: 0.875rem;
-      letter-spacing: var(--heading-letter-spacing);
-  
-      &::before {
-        content: "―";
-        margin-inline-end: space("x-small");
-        padding-inline-end: 0.5em;
-        color: theme-color("secondary");
-        font-weight: 700;
-      }
+    &::before {
+      content: "―";
+      position: absolute;
+      top: 0;
+      left: space("small");
+      color: theme-color("secondary");
+      font-weight: 700;
     }
+  }
+
+  &__button {
+    @include button();
   }
 }

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /**
- * Style.css
+ * style.css
  * © 2026 QWEL.DESIGN (https://qwel.design)
  * Released under the MIT License.
  * See LICENSE file for details.
@@ -26,12 +26,14 @@
 @import "root";
 @import "normalize";
 
-// Projects
+// Layout
 @import "header";
-@import "breadcrumb";
 @import "main";
 @import "footer";
+
+// Components
 @import "icon";
+@import "breadcrumb";
 
 // Utility
 //@import "utilities/flex";
