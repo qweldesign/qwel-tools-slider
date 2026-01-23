@@ -18,3 +18,6 @@ class AutoCopyright {
 }
 
 new AutoCopyright(2019, 'QWEL.DESIGN');
+
+import Slider from './js/slider.js';
+new Slider();

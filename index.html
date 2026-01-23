@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Title Here] | QWEL in Action</title>
+    <title>Slider Gallery | QWEL in Action</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Noto+Sans:wght@100..900&family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
@@ -16,23 +16,56 @@
     <ul class="breadcrumb">
       <li class="breadcrumb__item"><a href="https://qwel.design/">QWEL in Action</a></li>
       <li class="breadcrumb__item"><a href="../">Creative Tools</a></li>
-      <li class="breadcrumb__item breadcrumb__item--current"><span>[Title Here]</span></li>
+      <li class="breadcrumb__item breadcrumb__item--current"><span>Slider Gallery</span></li>
     </ul>
     <main class="main">
+      <div class="slider" data-gallery="slider" data-flickable>
+        <ul class="slider__inner" data-gallery-main>
+          <li class="slider__item" data-gallery-item>
+            <img loading="lazy" src="./assets/sampleImg00.jpg">
+          </li>
+          <li class="slider__item" data-gallery-item>
+            <img loading="lazy" src="./assets/sampleImg01.jpg">
+          </li>
+          <li class="slider__item" data-gallery-item>
+            <img loading="lazy" src="./assets/sampleImg02.jpg">
+          </li>
+          <li class="slider__item" data-gallery-item>
+            <img loading="lazy" src="./assets/sampleImg03.jpg">
+          </li>
+          <li class="slider__item" data-gallery-item>
+            <img loading="lazy" src="./assets/sampleImg04.jpg">
+          </li>
+          <li class="slider__item" data-gallery-item>
+            <img loading="lazy" src="./assets/sampleImg05.jpg">
+          </li>
+          <li class="slider__item" data-gallery-item>
+            <img loading="lazy" src="./assets/sampleImg06.jpg">
+          </li>
+        </ul>
+      </div>
       <div class="main__inner">
-        <h2 class="main__title">[Title Here] | Created by <span> ― QWEL.DESIGN</span></h2>
-        <h3 class="main__heading">Description</h3>
+        <h2 class="main__title">Slider Gallery | Created by <span> ― QWEL.DESIGN</span></h2>
         <ul class="main__list">
-          <li class="main__listItem">[Description Here]</li>
-          <li class="main__listItem">[Description Here]</li>
-          <li class="main__listItem">[Description Here]</li>
+          <li class="main__listItem">スライドアニメーションで遷移するギャラリー</li>
+          <li class="main__listItem">ドラグ, ホイール操作対応</li>
+          <li class="main__listItem">使い方: 
+            <br>_slider.scss をバンドルした css を読み込み,
+            <br>画面幅100%の要素内にギャラリーを配置する
+            <br>ギャラリー本体 (div等) に [data-gallery="slider"] 属性を付与し,
+            <br>ギャラリーインナーに (ul等) [data-gallery-main] 属性を付与し,
+            <br>ギャラリーアイテムに (li等) [data-gallery-item] 属性を付与する
+          </li>
+          <li class="main__listItem">オプション: 
+            <br>data-flickable: ドラグ、ホイール操作に対応 (規定でOFF, ONにする場合値は不要)
+            <br>data-aspect-ratio: アスペクト比 (SCSSも修正が必要)
+            <br>data-gap: アイテム間隔(px) SCSSで指定不可
+            <br>data-interval: アニメーション時間間隔
+            <br>data-duration: アニメーション所要時間
+          </li>
+          <li class="main__listItem">MITライセンスで提供しており, 商用/非商用問わず自由に利用可能です</li>
         </ul>
-        <h3 class="main__heading">Spec</h3>
-        <ul class="main__list">
-          <li class="main__listItem">[Spec Here]</li>
-          <li class="main__listItem">[Spec Here]</li>
-          <li class="main__listItem">[Spec Here]</li>
-        </ul>
+        <a class="main__button" href="https://github.com/qweldesign/qwel-tools-slider" target="_blank" rel="noopener">GitHubで見る</a>
       </div>
     </main>
     <footer id="footer" class="footer">
@@ -52,6 +85,6 @@
         <small class="footer__copyright"></small>
       </div>
     </footer>
-    <script src="./init.js"></script>
+    <script src="./init.js" type="module"></script>
   </body>
 </html>
