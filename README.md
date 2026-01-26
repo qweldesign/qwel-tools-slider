@@ -1,7 +1,7 @@
 # QWEL Slider Gallery
 
 - スライドアニメーションで遷移するギャラリー
-- ドラグ, ホイール操作対応
+- ドラグ, ホイール操作対応 (オプション)
 - **使い方**:  
   _slider.scss をバンドルした css を読み込み,  
   画面幅100%の要素内にギャラリーを配置する  
@@ -15,7 +15,7 @@
   data-interval: アニメーション時間間隔  
   data-duration: アニメーション所要時間
 
-▶ Sample DEMO: [https://tools.qwel.design/slider/]
+▶ Sample DEMO: [https://qwel.design/tools/slider/]
 
 ---
 
